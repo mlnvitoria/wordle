@@ -24,7 +24,7 @@ function Definition({ answer, theme }) {
         }
 
         getDefinitionData();
-    }, []);
+    }, [answer]);
     return <div className="mx-5">
         <span type="button" onClick={() => setVisible(true)} aria-labelledby="wordDefinitionLabel">
             <i className="bi bi-book mx-2"></i> Word Definition
@@ -41,17 +41,17 @@ function Definition({ answer, theme }) {
                 <CModalTitle id="wordDefinitionLabel">Word Definition</CModalTitle>
             </CModalHeader>
             <CModalBody>
-                { wordDefinition.map((meaning) => {
+                { wordDefinition.map((meaning, index) => {
                     let result = [];
-                    result.push(<p><span className="text-capitalize">{meaning.partOfSpeech}</span>:</p>)
+                    result.push(<p key={"meaning"+index}><span className="text-capitalize">{meaning.partOfSpeech}</span>:</p>)
                     
                     if (meaning.definitions.length) {
                         let defArray = [];
                         { meaning.definitions.map((definitionObj, iDef) => {
-                            defArray.push(<li>{iDef} - {definitionObj.definition}</li>)
+                            defArray.push(<li key={"meaningList"+index+"def"+iDef}>{iDef} - {definitionObj.definition}</li>)
                         }) }
-                        result.push(<ul>{defArray}</ul>);
-                        result.push(<hr/>);
+                        result.push(<ul key={"meaningList"+index}>{defArray}</ul>);
+                        result.push(<hr key={"break"+index} />);
                     }
                     
                     return result;
