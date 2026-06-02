@@ -1,18 +1,12 @@
-# React + Vite
+# Wordle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies used
+* React v19.2
+* Vite
 
-Currently, two official plugins are available:
+## Packages used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Random Words by @ApostropheCMS ([link here](https://github.com/apostrophecms/apostrophe/tree/main/packages/random-words))
+* Word Checker by @Nicholas Nguyen([link here](https://github.com/nguyennick197/react-word-checker))
+* Simple Keyboard by @hodgef and contributors ([link here](https://hodgef.com/simple-keyboard/))
+* Partycles by @jonathanleane ([link here](https://jonathanleane.github.io/partycles/))
