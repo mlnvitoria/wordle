@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: var(--background);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 25vmin;
+  pointer-events: none;
+}
+
+.App-header nav.navbar, span.navbar-brand-name {
+  color: var(--text-primary) !important
+}
+
+.App-main, .keep-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#themePicker label:first-child {
+  padding-right: 0.7rem;
+}
+#themePicker label:last-child {
+  padding-left: 0.6rem;
+}
+
+div.card {
+  --bs-card-bg: color-mix(in srgb, var(--text-secondary), transparent 80%) !important
+}
+
+div.offcanvas, div.modal-content {
+  background-color: var(--background) !important;
+  color: var(--text-primary) !important;
+}
+div.offcanvas button.btn-close, div.modal-content button.btn-close {
+  color: var(--text-primary) !important;
+}
+
+div.modal-content hr:last-child {
+  display: none;
+}

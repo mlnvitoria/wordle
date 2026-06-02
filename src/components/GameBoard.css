@@ -1,0 +1,33 @@
+
+div.char {
+    padding: 1vh;
+    margin: 0 1vh;
+    width: 2rem;
+    height: 2rem;
+    box-sizing: content-box;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5rem;
+
+    background-color: color-mix(in srgb, var(--text-secondary), transparent 20%);
+    color: var(--text-primary);
+    border-radius: 10px;
+} 
+div.attempt.selected {
+    padding: 1rem 0.6rem;
+    margin: 0 -1.5rem;
+    border: 3px solid var(--accent);
+    border-radius: 15px;
+}
+
+div.simple-keyboard {
+    background-color: var(--background);
+}
+
+div.simple-keyboard .hg-button {
+    color: var(--text-primary);
+
+    background-color: color-mix(in srgb, var(--text-secondary), transparent 20%);
+}
