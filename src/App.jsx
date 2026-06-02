@@ -20,10 +20,10 @@ function App() {
   return (
     <div className="App" data-bs-theme={theme} data-theme={theme}>
       <header className="App-header">
-        <nav className="navbar">
+        <nav className="navbar mx-3">
           <div className="container-fluid">
             <div className="navbar-brand">
-              <img src={logo} alt="Bootstrap" width="30" height="24" />
+              <img src={logo} alt="Icon" width="30" height="24" />
               <span className="navbar-brand-name ms-2 mb-0">Wordle</span>
             </div>
             <div className='d-flex'>
@@ -49,7 +49,21 @@ function App() {
           </div>
         </div>
       </section>
-      
+      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 border-top mx-3">
+        <div className="col-md-4 d-flex align-items-center">
+          <span className="mb-3 mx-3 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="FooterIcon">
+            <img src={logo} alt="FooterIcon" width="30" height="24" />
+          </span>
+          <span className="mb-3 mb-md-0 text-body-secondary">2026, Proudly made by Vitoria Mendes</span> 
+        </div>
+        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex mx-4">
+          <li className="ms-3">
+            <a className="text-body-secondary" href="https://github.com/mlnvitoria" aria-label="GitHub">
+              <i className="bi bi-github"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
