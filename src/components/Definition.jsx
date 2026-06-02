@@ -27,7 +27,7 @@ function Definition({ answer, theme }) {
     }, []);
     return <div className="mx-5">
         <span type="button" onClick={() => setVisible(true)} aria-labelledby="wordDefinitionLabel">
-            <i className="bi bi-book"> Word Definition</i>
+            <i className="bi bi-book mx-2"></i> Word Definition
         </span>
 
         <CModal 
