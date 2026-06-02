@@ -5,9 +5,9 @@ import App from './App.jsx'
 import Loading from './components/Loading.jsx'
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
+  <StrictMode>
     <Suspense fallback={<Loading />}>
       <App />
     </Suspense>
-  // </StrictMode>,
+  </StrictMode>,
 )
