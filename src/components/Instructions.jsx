@@ -17,27 +17,27 @@ function Instructions() {
                 <p>The color of the tiles will change to show how close your guess was to the word.</p>
                 <p>Examples:</p>
                 <div className="d-flex mb-3">
-                    <Char letter="W" color="success" />
-                    <Char letter="O" />
-                    <Char letter="R" />
-                    <Char letter="D" />
-                    <Char letter="Y" />
+                    <Char key="char-w" letter="W" color="success" />
+                    <Char key="char-o" letter="O" />
+                    <Char key="char-r" letter="R" />
+                    <Char key="char-d" letter="D" />
+                    <Char key="char-y" letter="Y" />
                 </div>
                 <p>W is in the word and in the correct spot.</p>
                 <div className="d-flex mb-3">
-                    <Char letter="L"/>
-                    <Char letter="I" color="warning"  />
-                    <Char letter="G" />
-                    <Char letter="H" />
-                    <Char letter="T" />
+                    <Char key="char-l" letter="L"/>
+                    <Char key="char-i" letter="I" color="warning"  />
+                    <Char key="char-g" letter="G" />
+                    <Char key="char-h" letter="H" />
+                    <Char key="char-t" letter="T" />
                 </div>
                 <p>I is in the word but in the wrong spot.</p>
                 <div className="d-flex mb-3">
-                    <Char letter="R" />
-                    <Char letter="O" />
-                    <Char letter="G" />
-                    <Char letter="U" color="danger" />
-                    <Char letter="E" />
+                    <Char key="char-r2" letter="R" />
+                    <Char key="char-o2" letter="O" />
+                    <Char key="char-g2" letter="G" />
+                    <Char key="char-u" letter="U" color="danger" />
+                    <Char key="char-e" letter="E" />
                 </div>
                 <p>U is not in the word in any spot.</p>
                 <p>Simple as this! Enjoy the game!</p>
