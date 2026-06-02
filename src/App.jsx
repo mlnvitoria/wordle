@@ -15,7 +15,7 @@ function App() {
   const [theme, setTheme] = useState(defaultDarkTheme === true ? "dark" : "light");
   const wordle = theme === 'dark' ? wordleDark : wordleLight;
 
-  const [answer] = useState(generate({ exactly: 1, minLength: 5, maxLength: 6 })[0].toUpperCase());
+  const [answer] = useState(() => generate({ exactly: 1, minLength: 5, maxLength: 6 })[0].toUpperCase());
 
   return (
     <div className="App" data-bs-theme={theme} data-theme={theme}>
