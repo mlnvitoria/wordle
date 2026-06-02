@@ -42,3 +42,11 @@ div.offcanvas button.btn-close, div.modal-content button.btn-close {
 div.modal-content hr:last-child {
   display: none;
 }
+
+a {
+  color: var(--text-primary);
+}
+
+.bi {
+  font-size: 1.2rem;
+}

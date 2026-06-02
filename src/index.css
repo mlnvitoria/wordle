@@ -12,7 +12,3 @@
   --text-secondary: #6610f2;
   --accent: #00f5d4;
 }
-
-a {
-  color: var(--text-primary);
-}
