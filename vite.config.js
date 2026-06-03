@@ -4,9 +4,6 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  server: {
-    port: 5173,
-  },
   css: {
     preprocessorOptions: {
       scss: {
@@ -16,6 +13,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    babel({ presets: [reactCompilerPreset()] })
+    babel({ presets: [reactCompilerPreset()] }),
   ],
+  base: "/wordle/",
 })
