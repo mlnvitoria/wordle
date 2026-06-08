@@ -65,6 +65,20 @@ a {
     section.container {
       margin-top: 5rem;
     }
+
+    #themePicker label:first-child {
+      padding-right: 0.3rem;
+    }
+    #themePicker label:last-child {
+      padding-left: 0.3rem;
+    }
+
+    .form-switch {
+      padding-left: 2rem;
+    }
+    .form-switch .form-check-input {
+      margin-left: -2rem;
+    }
 }
 @media screen and (min-width: 400px) {
     section.container {
