@@ -3,7 +3,7 @@ import Char from "./Char";
 function Instructions() {
     return <div className="mx-1">
         <span type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <i className="bi bi-patch-question"></i>
+            <i className="bi bi-patch-question"></i> <span className="d-none d-sm-inline-block">Instructions</span>
         </span>
 
         <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">

@@ -25,9 +25,9 @@ function Definition({ answer, theme }) {
 
         getDefinitionData();
     }, [answer]);
-    return <div className="mx-5">
+    return <div className="mx-2 mx-sm-4">
         <span type="button" onClick={() => setVisible(true)} aria-labelledby="wordDefinitionLabel">
-            <i className="bi bi-book mx-2"></i> Word Definition
+            <i className="bi bi-book mx-2"></i> <span className="d-none d-sm-inline-block">Word Definition</span>
         </span>
 
         <CModal 

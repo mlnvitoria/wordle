@@ -1,3 +1,7 @@
+body {
+  min-width: 340px !important;
+}
+
 .App {
   text-align: center;
   background-color: var(--background);
@@ -12,6 +16,12 @@
 
 .App-header nav.navbar, span.navbar-brand-name {
   color: var(--text-primary) !important
+}
+
+nav .container-fluid {
+  background-color: var(--background);
+  padding-bottom: 1rem;
+  flex-wrap: initial;
 }
 
 .App-main, .keep-center {
@@ -49,4 +59,15 @@ a {
 
 .bi {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 399px) {
+    section.container {
+      margin-top: 5rem;
+    }
+}
+@media screen and (min-width: 400px) {
+    section.container {
+      margin-top: 3rem;
+    }
 }
