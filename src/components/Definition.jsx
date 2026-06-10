@@ -10,6 +10,8 @@ function Definition({ answer, theme }) {
     const [visible, setVisible] = useState(false);
     const [ wordDefinition, setWordDefinition ] = useState([]);
 
+
+    //as an improvement, try moving api calls to a custom hook. it's good for readability, maintenance and reusability
     useEffect(() => {
         async function getDefinitionData() {
             let result;
@@ -41,6 +43,7 @@ function Definition({ answer, theme }) {
                 <CModalTitle id="wordDefinitionLabel">Word Definition</CModalTitle>
             </CModalHeader>
             <CModalBody>
+                {/* having this function as its own callback is good for readability */}
                 { wordDefinition.map((meaning, index) => {
                     let result = [];
                     result.push(<p key={"meaning"+index}><span className="text-capitalize">{meaning.partOfSpeech}</span>:</p>)

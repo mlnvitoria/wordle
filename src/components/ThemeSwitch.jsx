@@ -9,6 +9,7 @@ function ThemeSwitch({ theme, setTheme }) {
     });
 
     const handleChange = (event) => {
+       // these reused values like light' and 'dark' would be better to be in an enum or macro to reuse across the code
         let chosenTheme = (event.currentTarget.checked) ? 'dark' : 'light';
 
         localStorage.setItem('theme', JSON.stringify(chosenTheme));

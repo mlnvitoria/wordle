@@ -1,3 +1,6 @@
+//it's good to avoid !important on css to prevent losing control of where things are being controlled
+//it's less about react iself, but always a good practice
+
 body {
   min-width: 340px !important;
 }
